@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emanuela Vidojević - Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nebula-glow-1"></div>
+<div class="nebula-glow-2"></div>
+
+<div id="splash-screen">
+    <div class="purple-glow-effect"></div>
+    <div class="splash-orbit-container">
+        <div class="splash-ring">
+            <div class="splash-icon" style="--i:0;"><i class="fa-brands fa-html5" style="color:#e34f26;"></i></div>
+            <div class="splash-icon" style="--i:1;"><i class="fa-brands fa-css3-alt" style="color:#1572b6;"></i></div>
+            <div class="splash-icon" style="--i:2;"><i class="fa-brands fa-js" style="color:#f7df1e;"></i></div>
+            <div class="splash-icon" style="--i:3;"><i class="fa-brands fa-vuejs" style="color:#42b883;"></i></div>
+            <div class="splash-icon" style="--i:4;"><i class="fa-solid fa-server" style="color:#512bd4;"></i></div>
+            <div class="splash-icon" style="--i:5;"><i class="fa-brands fa-python" style="color:#3776ab;"></i></div>
+            <div class="splash-icon" style="--i:6;"><i class="fa-solid fa-database" style="color:#4479a1;"></i></div>
+            <div class="splash-icon" style="--i:7;"><i class="fa-brands fa-figma" style="color:#f24e1e;"></i></div>
+            <div class="splash-icon" style="--i:8;"><i class="fa-solid fa-hashtag" style="color:#9b4f96;"></i></div>
+            <div class="splash-icon" style="--i:9;"><i class="fa-brands fa-wordpress" style="color:#21759b;"></i></div>
+        </div>
+        <div class="splash-text-box">
+            <span class="splash-typing-title" id="typedSplashName"></span>
+        </div>
+    </div>
+</div>
+
+<header>
+    <a href="#pocetna" class="nav-brand">Portfolio<span>.</span></a>
+    <ul class="nav-items" id="navItems">
+        <li><a href="#pocetna" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+        <button class="theme-switch" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+<div class="wrapper">
+
+    <section id="pocetna" style="min-height: 100vh; padding: 9rem 0 5rem 0; display: flex; align-items: center; border-bottom: 1px solid var(--card-border);">
+        <div class="hero-grid">
+            <div class="hero-content animate-from-left">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/emanuela-vidojevi%C4%87-84803b35b" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/emanuelavidojevic" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/qr/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@emanuelavidojevic?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <h1>Hi, I'm <span>Emanuela</span></h1>
+
+                <div class="typing-role-container">
+                    I am a <span class="typing-role-text" id="heroRoleText"></span>
+                </div>
+
+                <div class="mobile-badge-container">
+                    <div class="badge-lanyard-wrapper">
+                        <div class="lanyard-strap">
+                            <span class="lanyard-text">PORTFOLIO</span>
+                        </div>
+                        <div class="lanyard-clip"></div>
+                        <div class="id-card-body">
+                            <div class="id-card-top-slot"></div>
+                            <div class="badge-avatar-frame">
+                                <img src="images/slika-cv.jpg" alt="Emanuela Vidojević">
+                            </div>
+                            <h3 class="badge-name">Emanuela Vidojević</h3>
+                            <span class="badge-title">Software Developer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="desktop-hero-desc">Motivated web designer and software candidate with a strong preference for frontend development and visual design. While experienced across application development, operational support, and backend services, my true focus is on crafting responsive layouts and clean user experiences.</p>
+                
+                <div class="hero-buttons">
+                    <a href="CV/EmanuelaB12CV.pdf" download="EmanuelaB12CV.pdf" class="btn btn-primary"><i class="fa-solid fa-download"></i> Download CV</a>
+                    <a href="mailto:emanuelavidojevic@gmail.com" class="btn btn-secondary desktop-only-email"><i class="fa-solid fa-envelope"></i> emanuelavidojevic@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="computer-gear-container animate-from-right desktop-only-gear">
+                <i class="fa-solid fa-gear gear-icon gear-top-right"></i>
+                <i class="fa-solid fa-gear gear-icon gear-bottom-left"></i>
+
+                <div class="computer-box">
+                    <div class="computer-screen">
+                        <div class="screen-header">
+                            <div class="dot dot-red"></div>
+                            <div class="dot dot-yellow"></div>
+                            <div class="dot dot-green"></div>
+                        </div>
+                        <div class="screen-content"><span style="color:#a855f7;">// C# Dev Environment</span>
+<span class="screen-code-text" id="csharpCodeText"></span></div>
+                    </div>
+                    <div class="computer-base"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" style="min-height: 100vh; padding: 9rem 0 5rem 0; display: flex; align-items: center; border-bottom: 1px solid var(--card-border);">
+        <div class="about-grid">
+            <div class="about-image-wrapper desktop-badge-container" id="aboutBadgeContainer">
+                <div class="badge-lanyard-wrapper">
+                    <div class="lanyard-strap">
+                        <span class="lanyard-text">PORTFOLIO</span>
+                    </div>
+                    <div class="lanyard-clip"></div>
+                    <div class="id-card-body">
+                        <div class="id-card-top-slot"></div>
+                        <div class="badge-avatar-frame">
+                            <img src="images/slika-cv.jpg" alt="Emanuela Vidojević">
+                        </div>
+                        <h3 class="badge-name">Emanuela Vidojević</h3>
+                        <span class="badge-title">Software Developer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content animate-from-right">
+                <span class="about-tagline">ABOUT ME</span>
+                <h2 class="section-title">Turning Ideas Into <span>Digital Reality</span></h2>
+                <p class="about-text">
+                    I am currently pursuing my master's studies in Information Technologies, having successfully completed my undergraduate vocational studies in Modern Computer Technologies. My academic and practical background blends robust software engineering with creative visual design.
+                </p>
+                
+                <div class="about-stats">
+                    <div class="stat-card"><h3>3+</h3><p>Years Tech Focus</p></div>
+                    <div class="stat-card"><h3>10+</h3><p>Web Projects</p></div>
+                    <div class="stat-card"><h3>100%</h3><p>Dedication</p></div>
+                </div>
+
+                <div class="education-section animate-fade-in">
+                    <h3 class="edu-title" style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--accent-glow);">Education</h3>
+                    <div class="education-timeline">
+                        <div class="education-item">
+                            <span class="edu-date">October 2026 - Expected in 2028</span>
+                            <h4 class="edu-title">Master of Computer Applications: Information Technologies and Systems</h4>
+                            <p class="edu-school">Academy of Technical-Educational Vocational Studies</p>
+                        </div>
+                        <div class="education-item">
+                            <span class="edu-date">2026-09 - 2023-06</span>
+                            <h4 class="edu-title">Bachelor of Computer Science: Modern Computer Science</h4>
+                            <p class="edu-school">Academy of Technical-Educational Vocational Studies</p>
+                        </div>
+                        <div class="education-item">
+                            <span class="edu-date">2019 - 2023</span>
+                            <h4 class="edu-title">High School Diploma</h4>
+                            <p class="edu-school">Electrical Engineering Highschool “Nikola Tesla”</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-action" style="margin-top: 2rem;">
+                    <a href="#contact" class="btn btn-primary btn-glow">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" style="padding: 9rem 0 5rem 0; border-bottom: 1px solid var(--card-border);">
+        <div class="portfolio-header text-left">
+            <h2 class="portfolio-title">Work Experience</h2>
+            <p class="portfolio-subtitle text-left">My professional journey through internships and technical support roles.</p>
+        </div>
+
+        <div class="timeline-center-wrapper">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item left animate-from-left">
+                <div class="timeline-dot"></div>
+                <div class="exp-card">
+                    <span class="exp-date">2026-01 - 2026-03</span>
+                    <h3 class="exp-role">Full-Stack Development Intern</h3>
+                    <h4 class="exp-company">Diligent Solution DOO, Niš</h4>
+                    <ul class="exp-list">
+                        <li>Developed EduShare as a full-stack project utilizing .NET Core, Vue.js, HTML, CSS, and SQL Server.</li>
+                        <li>Designed the database architecture and wrote technical documentation under mentorship.</li>
+                        <li>Built secure backend APIs for file uploads and automated organization.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item right animate-from-right">
+                <div class="timeline-dot"></div>
+                <div class="exp-card">
+                    <span class="exp-date">2025-03 - 2025-06</span>
+                    <h3 class="exp-role">Web Designer - Intern</h3>
+                    <h4 class="exp-company">Infinito Media, Niš</h4>
+                    <ul class="exp-list">
+                        <li>Completed an internship focused on modern web design, building and maintaining responsive website pages using HTML and CSS.</li>
+                        <li>Developed engaging digital content and leveraged Canva and Photoshop to produce striking graphics.</li>
+                        <li>Applied fundamental UI/UX principles to optimize user engagement and deliver polished web interfaces.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item left animate-from-left">
+                <div class="timeline-dot"></div>
+                <div class="exp-card">
+                    <span class="exp-date">2024-03 - 2024-06</span>
+                    <h3 class="exp-role">Technical Support & Data Intern</h3>
+                    <h4 class="exp-company">Leoni Serbia - Dual Education Program, Niš</h4>
+                    <ul class="exp-list">
+                        <li>Handled SQL-based data extraction and translated results into clear operational summaries for review.</li>
+                        <li>Supported system maintenance by tracking technical logs and helping resolve routine issues with the IT team.</li>
+                        <li>Maintained project documentation and kept technical records organized during the dual education program.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <section id="portfolio" class="portfolio-section animate-fade-in">
+        <div class="portfolio-header">
+            <h2 class="portfolio-title">Portfolio Showcase</h2>
+            <p class="portfolio-subtitle text-center">
+                Explore my journey through projects, certifications, and technical expertise. Each section represents a milestone in my continuous learning path.
+            </p>
+        </div>
+
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="openTab(event, 'projects-tab')">
+                <i class="fa-solid fa-code"></i> Projects
+            </button>
+            <button class="tab-btn" onclick="openTab(event, 'certificates-tab')">
+                <i class="fa-solid fa-certificate"></i> Certificates
+            </button>
+            <button class="tab-btn" onclick="openTab(event, 'tech-tab')">
+                <i class="fa-solid fa-layer-group"></i> Tech Stack
+            </button>
+        </div>
+
+        <div id="projects-tab" class="tab-content active">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-img-box">
+                        <img src="bookletedushare/bookletedushareslika.png" alt="EduShare Platform">
+                    </div>
+                    <h3 class="card-title">EduShare Platform</h3>
+                    <p class="card-desc">Full-stack web application for academic resource and code sharing utilizing C#, .NET Core Web API, Vue.js, and MySQL.</p>
+                    <div class="card-actions">
+                        <a href="https://github.com/emanuelavidojevic" target="_blank" class="btn-demo">
+                            Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="edusharedetails.html" class="btn-details">
+                            Details <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-img-box">
+                        <img src="bookletemkod/emkodslika.png" alt="Emkod Platform">
+                    </div>
+                    <h3 class="card-title">Emkod Platform</h3>
+                    <p class="card-desc">Interactive coding and educational platform crafted for modern learners, featuring dynamic code editors and structured tutorials.</p>
+                    <div class="card-actions">
+                        <a href="https://github.com/emanuelavidojevic" target="_blank" class="btn-demo">
+                            Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <a href="emkoddetails.html" class="btn-details">
+                            Details <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="certificates-tab" class="tab-content">
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-img-box">
+                        <img src="images/aisec.png" alt="AIESEC Certificate">
+                    </div>
+                    <h3 class="cert-card-title">AIESEC Leadership & Practice</h3>
+                    <p class="cert-card-issuer">AIESEC Organization</p>
+                    <a href="images/aisec.png" download="AIESEC_Certificate.png" class="btn-cert-download">
+                        <i class="fa-solid fa-download"></i> Download Certificate
+                    </a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-img-box">
+                        <img src="images/zlatibor.jpeg" alt="Zlatibor Recognition">
+                    </div>
+                    <h3 class="cert-card-title">Zlatibor Professional Recognition</h3>
+                    <p class="cert-card-issuer">Zlatibor Event & Summit</p>
+                    <a href="images/zlatibor.jpeg" download="Zlatibor_Certificate.jpeg" class="btn-cert-download">
+                        <i class="fa-solid fa-download"></i> Download Certificate
+                    </a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-img-box">
+                        <img src="images/b2-eng.png" alt="B2 English Certificate">
+                    </div>
+                    <h3 class="cert-card-title">English B2 Upper Intermediate</h3>
+                    <p class="cert-card-issuer">Verified English Proficiency</p>
+                    <a href="images/b2-eng.png" download="B2_English_Certificate.png" class="btn-cert-download">
+                        <i class="fa-solid fa-download"></i> Download Certificate
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="tech-tab" class="tab-content">
+            <div class="tech-grid">
+                <div class="tech-card"><i class="fa-brands fa-html5" style="color:#e34f26;"></i><span>HTML5</span></div>
+                <div class="tech-card"><i class="fa-brands fa-css3-alt" style="color:#1572b6;"></i><span>CSS3</span></div>
+                <div class="tech-card"><i class="fa-brands fa-js" style="color:#f7df1e;"></i><span>JavaScript</span></div>
+                <div class="tech-card"><i class="fa-brands fa-vuejs" style="color:#42b883;"></i><span>Vue.js</span></div>
+                <div class="tech-card"><i class="fa-solid fa-code" style="color:#9b4f96;"></i><span>C Language</span></div>
+                <div class="tech-card"><i class="fa-brands fa-bootstrap" style="color:#7952b3;"></i><span>Bootstrap</span></div>
+                <div class="tech-card"><i class="fa-brands fa-wordpress" style="color:#21759b;"></i><span>WordPress</span></div>
+                <div class="tech-card"><i class="fa-solid fa-database" style="color:#4479a1;"></i><span>MySQL</span></div>
+                <div class="tech-card"><i class="fa-solid fa-hashtag" style="color:#512bd4;"></i><span>C#</span></div>
+                <div class="tech-card"><i class="fa-solid fa-server" style="color:#663399;"></i><span>.NET Core Web API</span></div>
+                <div class="tech-card"><i class="fa-brands fa-figma" style="color:#f24e1e;"></i><span>Figma</span></div>
+                <div class="tech-card"><img src="https://cdn.worldvectorlogo.com/logos/adobe-photoshop-2.svg" alt="Photoshop"><span>Photoshop</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="padding: 9rem 0 6rem 0;">
+        <div class="portfolio-header text-left">
+            <h2 class="portfolio-title">Get In Touch</h2>
+            <p class="portfolio-subtitle text-left">Have a project in mind, a collaboration proposal, or just want to say hi? Feel free to drop a message!</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-form-box animate-from-left">
+                <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                    <div class="form-group text-left">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group text-left">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group text-left">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-glow" style="width: 100%; justify-content: center;">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+            <div class="contact-info-box animate-from-right">
+                <div class="contact-card-info">
+                    <div class="contact-icon-wrap"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text-left">
+                        <h4>Email</h4>
+                        <p>emanuelavidojevic@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-card-info">
+                    <div class="contact-icon-wrap"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text-left">
+                        <h4>Location</h4>
+                        <p>Serbia</p>
+                    </div>
+                </div>
+                <div class="contact-card-info">
+                    <div class="contact-icon-wrap"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="text-left">
+                        <h4>Education</h4>
+                        <p>Master IT / Modern Computer Technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
